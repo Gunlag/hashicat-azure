@@ -110,6 +110,7 @@ resource "azurerm_linux_virtual_machine" "catapp" {
   name                            = "${var.prefix}-meow"
   location                        = azurerm_resource_group.myresourcegroup.location
   resource_group_name             = azurerm_resource_group.myresourcegroup.name
+  department                      = "devops"
   size                            = var.vm_size
   admin_username                  = var.admin_username
   admin_password                  = var.admin_password
